@@ -8,9 +8,30 @@ background-color: 02b4af;
   border: 0;
 }
 
+.center {
+display: flex;
+  color: red;
+  align-items: center;
+  justify-content: center;
+}
+
 nav {
 background-color: pink;
   overflow: hidden;
+}
+
+ol {
+  display: flex;
+}
+
+ol li {
+  list-style: none;
+  padding: 15px;
+}
+
+ol li a {
+  text-decoration: none;
+  color: red;
 }
 
 section img {

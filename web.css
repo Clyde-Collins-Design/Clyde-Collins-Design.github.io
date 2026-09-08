@@ -13,15 +13,6 @@ background-color: pink;
   overflow: hidden;
 }
 
-footer {
-background-color: 02b4af;
-  color: pink;
-  text-align: center;
-  padding: 1em;
-  margin: 0;
-  border: 0;
-}
-
 section img {
 position: absolute;
   top: 8vh;
@@ -50,6 +41,7 @@ aside img {
 }
 
 footer {
+  background-color: 02b4af;
 margin-top: 6vh;
   width: 100%;
   display: flex;

@@ -1,3 +1,7 @@
+.html{
+  display: flex;
+  flex-direction: column;
+}
 
 header {
 background-color: 02b4af;

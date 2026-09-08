@@ -10,14 +10,16 @@ background-color: 02b4af;
 
 .center {
 display: flex;
-  color: red;
+  color: pink;
   align-items: center;
   justify-content: center;
 }
 
 nav {
+  display: flex;
+  align-items: center;
+  height: 8vh;
 background-color: pink;
-  overflow: hidden;
 }
 
 ol {
@@ -31,7 +33,7 @@ ol li {
 
 ol li a {
   text-decoration: none;
-  color: red;
+  color: pink;
 }
 
 section img {

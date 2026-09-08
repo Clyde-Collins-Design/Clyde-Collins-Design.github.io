@@ -5,3 +5,11 @@ background-color: 02b4af;
   text-align: center;
   padding: 1em;
 }
+
+nav {
+background-color: purple;
+  color: pink;
+  overflow:hidden;
+}
+
+

@@ -1,12 +1,15 @@
 
 header {
 background-color: 02b4af;
-  color: pink;
+  color: rgb(255, 128, 149);
+  color-shadow: rgb(253, 209, 209);
   text-align: center;
+  width: 100%;
+  height: 10vh;
   padding: 1em;
-  margin: 0;
-  border: 0;
 }
+
+
 
 .center {
 display: flex;
@@ -19,7 +22,7 @@ nav {
   display: flex;
   align-items: center;
   height: 8vh;
-background-color: pink;
+  background-color: pink;
 }
 
 ol {
@@ -37,23 +40,19 @@ ol li a {
 }
 
 section img {
-position: absolute;
-  top: 8vh;
-  left: 3vw;
-  height: 40vh;
-  width: 60vw;
+display: flex;
+  width: 100%;
   border-radius: 15px;
 }
 
 .container {
-width: 65vw;
+width: 100%;
   height: 65vh;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
   justify-content: center;
-  position: relative;
   border-bottom: 1px black;
 }
 
@@ -77,11 +76,14 @@ aside img {
 
 footer {
   background-color: 02b4af;
-margin-top: 6vh;
-  width: 100%;
+  margin-top: 100vh;
+  text-align: center;
   display: flex;
+  width: 100%;
   align-items: center;
   justify-content: center;
   color: pink;
+  padding: 1em;
+
 }
 

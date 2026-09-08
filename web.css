@@ -8,8 +8,15 @@ background-color: 02b4af;
 }
 
 nav {
-background-color: purple;
+background-color: pink;
   overflow: hidden;
 }
 
+footer {
+background-color: 02b4af;
+  color: pink;
+  text-align: center;
+  padding: 1em;
+  margin: 0;
+}
 

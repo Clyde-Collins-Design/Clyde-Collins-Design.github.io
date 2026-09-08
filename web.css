@@ -22,3 +22,39 @@ background-color: 02b4af;
   border: 0;
 }
 
+section img {
+position: absolute;
+  top: 8vh;
+  left: 3vw;
+  height: 40vh;
+  width: 60vw;
+  border-radius: 15px;
+}
+
+main {
+position: absolute;
+  top: 50vh;
+  left: 3vw;
+    right: 7vw;
+}
+
+.mid {
+display: flex;
+  flex-direction: row;
+}
+
+aside img {
+  height: 65vh;
+  width: 30vw;
+  margin-left: 2vw;
+}
+
+footer {
+margin-top: 6vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: pink;
+}
+

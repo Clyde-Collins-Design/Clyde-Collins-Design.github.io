@@ -1,25 +1,33 @@
 
 header {
   background-color: 02b4af;
-  background-image: url("photos/IMG_4238.JPG");
+  /*background-image: url("photos/IMG_4238.JPG");*/
   background-size: cover;
   color: rgb(255, 128, 149);
-  text-align: center;
+  display: flex;
   width: 100%;
+  height: clamp(10vh, 20vw, 120px);
+  text-align: right;
+
+}
+
+.home-button img {
+  display: flex;
+  align-items: left;
   height: clamp(10vh, 20vw, 120px);
 }
 
 
 
 .center {
-  display: flex;
+  display: block;
   color: pink;
-  align-items: center;
+  align-items: left;
   justify-content: center;
 }
 
 nav {
-  display: flex;
+  display: block;
   align-items: center;
   height: 8vh;
   background-color: pink;
@@ -46,6 +54,7 @@ ol li a {
 
 .hero-shot {
   display: grid;
+  position: relative;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
   text-align: center;
@@ -82,6 +91,7 @@ justify-content: center;
     grid-template-columns: 1fr;
   }
  }
+
 
 
 main {

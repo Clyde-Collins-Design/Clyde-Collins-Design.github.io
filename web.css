@@ -111,6 +111,28 @@ justify-content: right;
 
 /***Portfolio-main**/
 
+.select-proj {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+align-items:center;
+justify-content: center;
+text-align: center;
+
+}
+
+.select-proj img {
+  display: flex;
+min-width:10vw;
+max-width: 25vw;
+border: solid  black;
+margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 880px) {
+  .select-proj {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
 
 /************************************************************/

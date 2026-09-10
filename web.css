@@ -1,15 +1,20 @@
+/*****General***/
+
 
 header {
-  background-color: 02b4af;
+  background-color: 800869;
   /*background-image: url("photos/IMG_4238.JPG");*/
   background-size: cover;
   color: rgb(255, 128, 149);
   display: flex;
   width: 100%;
   height: clamp(10vh, 20vw, 120px);
-  text-align: right;
+  font-size: 24px;
 
 }
+
+
+
 
 .home-button img {
   display: flex;
@@ -17,13 +22,10 @@ header {
   height: clamp(10vh, 20vw, 120px);
 }
 
-
-
-.center {
-  display: block;
-  color: pink;
-  align-items: left;
-  justify-content: center;
+@media screen and (max-width: 880px) {
+  header {
+    font-size: 10px;
+  }
 }
 
 nav {
@@ -51,7 +53,63 @@ ol li a {
   color: pink;
 }
 
+main {
+position:relative;
+width: 100%;
+text-align: center;
+justify-content: center;
 
+}
+
+footer {
+  background-color: 02b4af;
+  margin-top: 100vh;
+  text-align: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  color: pink;
+
+}
+/************************************************************/
+
+/***Home***/
+
+.sidebar {
+  width: 25vw;
+  position: absolute;
+  z-index: 1;
+  top: 30vh;
+  right: 0;
+  overflow-x: hidden;
+  
+}
+
+.sidebar img {
+  display: block;
+width: 25vw;
+justify-content: right;
+  align-items: right;
+}
+
+
+
+/************************************************************/
+
+/***About***/
+
+
+
+/************************************************************/
+
+/***Portfolio-main**/
+
+
+
+/************************************************************/
+
+/***portfolio-indiv-piece***/
 .hero-shot {
   display: grid;
   position: relative;
@@ -93,36 +151,5 @@ justify-content: center;
   }
  }
 
-
-
-main {
-position:relative;
-width: 100%;
-text-align: center;
-justify-content: center;
-
-}
-
-
-aside img {
-  display: flex;
-  flex-direction: row;
-  width: full;
-  height: 30vw;
-  align-items: right;
-  justify-content: right;
-  position: relative;
-}
-
-footer {
-  background-color: 02b4af;
-  margin-top: 100vh;
-  text-align: center;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  color: pink;
-
-}
+/************************************************************/
 

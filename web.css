@@ -5,21 +5,33 @@ header {
   background-color: 800869;
   /*background-image: url("photos/IMG_4238.JPG");*/
   background-size: cover;
-  color: rgb(255, 128, 149);
   display: flex;
-  width: 100%;
   height: clamp(10vh, 20vw, 120px);
-  font-size: 24px;
+  align-items: center;
+  
 
 }
 
 
+header img {
+  justify-content: right;
+  height: clamp(10vh, 20vw, 120px);
+  justify-content: right;
+}
 
+.home-button {
+  display: inline-block;
+  background-color: inherit;
+  align-items: left;
+  border: none;
+}
 
 .home-button img {
-  display: flex;
-  align-items: left;
   height: clamp(10vh, 20vw, 120px);
+}
+
+.home-button:hover {
+  opacity: 50%;
 }
 
 @media screen and (max-width: 880px) {
@@ -77,21 +89,80 @@ footer {
 /***Home***/
 
 .sidebar {
-  width: 25vw;
+  width: 25vw; 
   position: absolute;
   z-index: 1;
   top: 30vh;
   right: 0;
   overflow-x: hidden;
-  
+  border-top-left-radius: 5%;
+  border-bottom-left-radius: 5%;
 }
 
 .sidebar img {
-  display: block;
-width: 25vw;
-justify-content: right;
+  width: 25vw;
+  height: 80%;
+  justify-content: right;
   align-items: right;
 }
+
+.sidebar .btn1 {
+  background-color: inherit;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  color: white;
+  border-top-left-radius: 5%;
+  width: 25vw;
+  height: 50%;
+  
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  
+  text-decoration: none;
+  font-size: 16px;
+
+  cursor: pointer;
+} 
+
+.sidebar .btn2 {
+  background-color: inherit;
+  display: block;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border-bottom-left-radius: 5%;
+  
+  color: white;
+
+  width: 25vw;
+  height: 50%;
+  
+  text-align: center;
+  
+  text-decoration: none;
+  font-size: 16px;
+
+  cursor: pointer;
+} 
+
+.btn1:hover {
+  background-color: purple;
+  opacity: 50%;
+}
+
+.btn2:hover {
+  background-color: purple;
+  opacity: 50%;
+}
+
 
 .home-content {
   width: 70vw;

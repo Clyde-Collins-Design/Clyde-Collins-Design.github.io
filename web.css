@@ -5,29 +5,35 @@ header {
   background-color: 800869;
   /*background-image: url("photos/IMG_4238.JPG");*/
   background-size: cover;
-  display: flex;
-  height: clamp(10vh, 20vw, 120px);
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   
+  height: clamp(10vh, 20vw, 120px);
 
 }
 
+figcaption {
+  display: block;
+}
 
-header img {
-  justify-content: right;
+
+.logo img {
   height: clamp(10vh, 20vw, 120px);
   justify-content: right;
+  display: flex;
+  background-color: rgb(135, 135, 255);
 }
 
 .home-button {
-  display: inline-block;
+  display: flex;
   background-color: inherit;
-  align-items: left;
+  height: clamp(10vh, 20vw, 120px);
   border: none;
 }
 
 .home-button img {
-  height: clamp(10vh, 20vw, 120px);
+  display: flex;
+  
 }
 
 .home-button:hover {
@@ -216,37 +222,45 @@ margin-bottom: 2vh;
   justify-content: center;
   text-align: center;
   align-items: center;
+  margin: none;
+  padding: none;
 }
 
-.hero-shot .image img {
-  width: full;
-  height: 40vw;
+.hero-shot img {
+  width: 100%;
+  
+  justify-content: center;
+  margin: none;
+  padding: none;
   
 }
 
 @media screen and (max-width: 880px) {
 .hero-shot {
   grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
 }
 }
 
 .process-shot {
 display: grid;
-grid-template-columns: 1fr, 1fr, 1fr;
-justify-content: center;
-  text-align: center;
+position: relative;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+margin: none;
+  justify-content: center;
   align-items: center;
-
  }
 
  .process-shot img {
-  max-width: 300px;
+  width: 100%;
+  
  }
 
 
  @media screen and (max-width: 880px) {
   .process-shot {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1 fr 1fr;
   }
  }
 

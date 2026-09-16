@@ -5,21 +5,15 @@ header {
   background-color: 800869;
   /*background-image: url("photos/IMG_4238.JPG");*/
   background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
   
   height: clamp(10vh, 20vw, 120px);
 
 }
 
-figcaption {
-  display: block;
-}
-
 
 .logo img {
   height: clamp(10vh, 20vw, 120px);
-  justify-content: right;
   display: flex;
   background-color: rgb(135, 135, 255);
 }
@@ -31,10 +25,7 @@ figcaption {
   border: none;
 }
 
-.home-button img {
-  display: flex;
-  
-}
+
 
 .home-button:hover {
   opacity: 50%;
@@ -53,9 +44,7 @@ nav {
   background-color: pink;
 }
 
-section {
-  width: 100%;
-}
+
 
 ol {
   display: flex;
@@ -78,6 +67,25 @@ text-align: center;
 justify-content: center;
 
 }
+
+section {
+  font-size: 24px;
+  position: relative;
+  width: 80vw;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10vw;
+  border: solid black 1px;
+}
+
+
+@media screen and (max-width: 880px) {
+  section {
+    font-size: 18px;
+  }
+}
+
 
 footer {
   background-color: 02b4af;
@@ -200,7 +208,7 @@ text-align: center;
 .select-proj img {
   display: flex;
 min-width:10vw;
-max-width: 25vw;
+max-width: 20vw;
 border: solid  black;
 margin-bottom: 2vh;
 }
@@ -248,8 +256,8 @@ display: grid;
 position: relative;
 grid-template-columns: 1fr 1fr 1fr 1fr;
 margin: none;
-  justify-content: center;
-  align-items: center;
+justify-content: center;
+align-items: top;
  }
 
  .process-shot img {

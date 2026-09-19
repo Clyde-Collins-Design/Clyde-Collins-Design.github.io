@@ -2,7 +2,7 @@
 
 
 header {
-  background-color: 800869;
+  background-color: rgba(240, 30, 30, 0.894);
   /*background-image: url("photos/IMG_4238.JPG");*/
   background-size: cover;
   display: flex;
@@ -15,7 +15,7 @@ header {
 .logo img {
   height: clamp(10vh, 20vw, 120px);
   display: flex;
-  background-color: rgb(135, 135, 255);
+  background-color: inherit;
 }
 
 .home-button {
@@ -65,6 +65,7 @@ position:relative;
 width: 100%;
 text-align: center;
 justify-content: center;
+background-color: rgb(255, 165, 129);
 
 }
 
@@ -88,14 +89,14 @@ section {
 
 
 footer {
-  background-color: 02b4af;
+  background-color: rgba(240, 30, 30, 0.894);
   margin-top: 100vh;
   text-align: center;
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  color: pink;
+  color: rgb(255, 234, 143);
 
 }
 /************************************************************/
@@ -118,6 +119,12 @@ footer {
 
   justify-content: right;
   align-items: right;
+}
+
+@media screen and (max-width: 880px) {
+  .sidebar img{
+    height: 100%;
+  }
 }
 
 .sidebar .btn1 {
@@ -190,27 +197,101 @@ footer {
 
 /***About***/
 
+.about-content {
+width: 60vw;
+display: flex;
+flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+  
+}
 
+.about-main {
+  position:relative;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+
+  background-color:rgb(255, 165, 129);
+
+}
+
+.about-info-block {
+  display: block;
+  border-radius: 12px;
+  padding: 2vw;
+  padding-top: 0;
+
+  background-color: rgb(255, 234, 143);
+  
+  text-align: left;
+  align-items: top;
+  justify-content: right;
+  margin: 2vh;
+
+
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-display: block;
+  line-height: 1.5;
+
+}
+
+.about-sidebar {
+  width: 30vw; 
+  position: absolute;
+  z-index: 1;
+  top: 30vh;
+  right: 0;
+  overflow-x: hidden;
+
+  justify-content: right;
+  text-align: center;
+  align-items: center;
+
+  line-height: 1.5;
+ 
+}
+
+.about-sidebar img {
+  display: flex;
+  width: 100%;
+
+
+ 
+ border-radius: 12px;
+ 
+
+}
 
 /************************************************************/
 
 /***Portfolio-main**/
 
 .select-proj {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-align-items:center;
+display: flex;
+flex-wrap: wrap;
 justify-content: center;
-text-align: center;
+}
 
+.select-proj .block {
+  margin: 2vh;
+  width: 20vw;
+  border: solid  rgb(255, 234, 143);
+  background-color: rgb(255, 234, 143);
+}
+
+.select-proj .desc {
+text-align: center;
+padding: 2vh;
 }
 
 .select-proj img {
-  display: flex;
-min-width:10vw;
-max-width: 20vw;
-border: solid  black;
-margin-bottom: 2vh;
+width: 100%;
+height: auto;
+background-color: white;
+
 }
 
 @media screen and (max-width: 880px) {
@@ -236,11 +317,19 @@ margin-bottom: 2vh;
 
 .hero-shot img {
   width: 100%;
+  background-color: white;
+  
   
   justify-content: center;
   margin: none;
-  padding: none;
+  margin-top: 2vh;
+  margin-left: auto;
+  padding: 0;
   
+}
+
+.argus-main {
+  background-color: rgb(69, 215, 255);
 }
 
 @media screen and (max-width: 880px) {
@@ -268,7 +357,8 @@ align-items: top;
 
  @media screen and (max-width: 880px) {
   .process-shot {
-    grid-template-columns: 1 fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    
   }
  }
 

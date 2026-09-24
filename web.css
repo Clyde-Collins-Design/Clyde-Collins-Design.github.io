@@ -304,6 +304,49 @@ background-color: white;
 /************************************************************/
 
 /***portfolio-indiv-piece***/
+
+.in-use  {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.in-use .block {
+  margin: 2vh;
+  width: 30vw;
+  justify-content: center;
+}
+
+
+.in-use img {
+width: 100%;
+height: auto;
+background-color: white;
+}
+
+.beetle-in-use {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  max-height: 40vh;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: white;
+
+}
+
+.beetle-in-use img {
+ max-height: 15vh;
+   justify-content: center;
+  margin: 2vh 2vw;
+  padding: 0;
+  
+}
+
+
 .hero-shot {
   display: grid;
   position: relative;
@@ -317,7 +360,7 @@ background-color: white;
 
 .hero-shot img {
   width: 100%;
-  background-color: white;
+  filter: drop-shadow(8px 8px rgba(59, 57, 57, 0.418));
   
   
   justify-content: center;
@@ -330,7 +373,48 @@ background-color: white;
 
 .argus-main {
   background-color: rgb(69, 215, 255);
+  justify-content: center;
 }
+
+.argus-section {
+  display: block;
+  border-radius: 12px;
+  padding: 2vw;
+  
+
+  background-color: white;
+  
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 80vw;
+
+
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-display: block;
+  line-height: 1.5;
+}
+
+.argus-in-use {
+  display: grid;
+position: relative;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+margin: none;
+justify-content: center;
+align-items: center;
+}
+
+.argus-in-use img {
+  width: 100%;
+}
+
+.beetle-main {
+  background-color: rgb(255, 113, 97);
+}
+
+
 
 @media screen and (max-width: 880px) {
 .hero-shot {
@@ -341,15 +425,28 @@ background-color: white;
 }
 
 .process-shot {
-display: grid;
-position: relative;
-grid-template-columns: 1fr 1fr 1fr 1fr;
-margin: none;
+
+display: flex;
+flex-wrap: wrap;
 justify-content: center;
-align-items: top;
+align-items: center;
+
+ }
+
+ .process-shot .block {
+   margin: 2vh;
+  max-width: 40vw;
+  justify-content: center;
+ }
+
+ .process-shot .argus-block {
+   margin: 2vh;
+  max-width: 20vw;
+  justify-content: center;
  }
 
  .process-shot img {
+  height: auto;
   width: 100%;
   
  }

@@ -4,26 +4,52 @@
 header {
   background-color: rgba(240, 30, 30, 0.894);
   /*background-image: url("photos/IMG_4238.JPG");*/
-  background-size: cover;
   display: flex;
+  justify-content: space-between;
+
+  padding: 4px;
   
   height: clamp(10vh, 20vw, 120px);
-
 }
 
+header .column {
+  border: solid black 1px;
+  width: 1fr;
+  flex-direction: rows;
+  justify-content: space-around;
+}
 
-.logo img {
-  height: clamp(10vh, 20vw, 120px);
-  display: flex;
+.logo {
+  
+  border: 1px black;
+  justify-content: center;
+}
+
+.column img {
   background-color: inherit;
+  height: 100%;
+  
 }
 
-.home-button {
+header .home-button img {
   display: flex;
+  background-image: url("photos/Logo.png");
   background-color: inherit;
   height: clamp(10vh, 20vw, 120px);
   border: none;
+  padding: 4px;
 }
+
+.page-name {
+grid-column-start: 3 / span 2;
+}
+
+.page-name img {
+  width: 100%;
+  height: auto;
+}
+
+
 
 
 
@@ -204,6 +230,8 @@ flex-direction: column;
   justify-content: left;
   align-items: left;
   text-align: left;
+
+  
   
 }
 
@@ -217,11 +245,18 @@ flex-direction: column;
 
 }
 
+.header {
+  font: 18px Impact, Haettenschweiler, sans-serif;
+  font-stretch: expanded;
+  
+}
+
 .about-info-block {
   display: block;
   border-radius: 12px;
   padding: 2vw;
-  padding-top: 0;
+ 
+  
 
   background-color: rgb(255, 234, 143);
   
@@ -231,10 +266,10 @@ flex-direction: column;
   margin: 2vh;
 
 
-  font-family: Georgia, serif;
+  font-family: Tahoma;
   font-size: 18px;
-  font-display: block;
   line-height: 1.5;
+  
 
 }
 
@@ -250,7 +285,7 @@ flex-direction: column;
   text-align: center;
   align-items: center;
 
-  line-height: 1.5;
+ 
  
 }
 
@@ -356,6 +391,7 @@ background-color: white;
   align-items: center;
   margin: none;
   padding: none;
+  
 }
 
 .hero-shot img {
@@ -372,7 +408,7 @@ background-color: white;
 }
 
 .argus-main {
-  background-color: rgb(69, 215, 255);
+  background-color: rgb(172, 237, 255);
   justify-content: center;
 }
 
